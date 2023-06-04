@@ -36,10 +36,8 @@ async def main():
     dp.include_router(state_email_doctor_handlers.router)
     dp.include_router(user_handlers.router)
 
-    # Кнопка меню
     await set_menu(bot)
 
-    # Запускаем polling
     await dp.start_polling(bot)
 
 

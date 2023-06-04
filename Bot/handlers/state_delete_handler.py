@@ -50,7 +50,7 @@ async def delete_press(callback: CallbackQuery, state: FSMContext):
     session_delete_person(engine, callback.message.chat.id)
 
     await callback.message.answer(text='Все ваши записи удалены из базы данных.')
-    # Завершаем работу машины
+
     await state.clear()
 
 
@@ -63,5 +63,5 @@ async def delete_not_press(callback: CallbackQuery, state: FSMContext):
     await callback.message.delete()
 
     await callback.message.answer(text='Удаление дневника отменено.')
-    # Завершаем работу машины
+
     await state.clear()

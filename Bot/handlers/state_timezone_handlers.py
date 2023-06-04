@@ -58,7 +58,7 @@ async def timezone_press(callback: CallbackQuery, state: FSMContext):
             text='Сделайте хотя бы одну запись в дневнике, а потом можно будет изменить часовой пояс.')
 
     await callback.message.answer(text='Часовой пояс изменен.')
-    # Завершаем работу машины
+
     await state.clear()
 
 

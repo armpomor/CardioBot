@@ -38,7 +38,7 @@ async def change_command(message: Message, state: FSMContext):
     else:
         await message.answer(text='У вас нет ни одной записи в дневнике.\n'
                                   'Изменять нечего.')
-        # Завершаем работу машины
+
         await state.clear()
 
 
@@ -59,7 +59,7 @@ async def change_not_press(callback: CallbackQuery, state: FSMContext):
     await callback.message.delete()
 
     await callback.message.answer(text='Изменение последней записи отменено.')
-    # Завершаем работу машины
+
     await state.clear()
 
 
@@ -237,7 +237,6 @@ async def comment_sent(message: Message, state: FSMContext):
     # Добавляем полученные данные в БД
     session_add(user, engine)
 
-    # Завершаем работу машины
     await state.clear()
     # Отправляем сообщение, что данные сохранены
     await message.answer(text='Ваша последняя запись изменена.')

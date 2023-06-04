@@ -38,7 +38,6 @@ async def email_command(message: Message, state: FSMContext):
     else:
         await message.answer(text='У вас нет еще ни одной записи в дневнике, отправлять нечего.\n'
                                   'Сделайте хотя бы одну запись, а потом введите email')
-        # Завершаем работу машины
         await state.clear()
 
 
@@ -65,5 +64,4 @@ async def email_entry(message: Message, state: FSMContext):
     else:
         await message.answer(text='Вы ошиблись, попробуйте снова ввести email.')
 
-    # Завершаем работу машины
     await state.clear()

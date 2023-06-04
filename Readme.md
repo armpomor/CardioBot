@@ -1,5 +1,5 @@
 # CardioBot
-@Cardio100Bot
+[@Cardio100Bot](https://t.me/Cardio100Bot)
 
 Telegram-bot с PostgreSQL, SQLAlchemy и Docker.
 Дневник контроля артериального давления и самочувствия.

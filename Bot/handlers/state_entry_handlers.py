@@ -294,7 +294,6 @@ async def comment_sent(message: Message, state: FSMContext):
     # Добавляем полученные данные в БД
     session_add(user, engine)
 
-    # Завершаем работу машины
     await state.clear()
     # Отправляем сообщение, что данные сохранены
     await message.answer(text='Ваши данные сохранены!')

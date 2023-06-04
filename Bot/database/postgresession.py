@@ -25,9 +25,8 @@ def session_add(person, engine):
     with Session(autoflush=True, bind=engine) as db:
         # Создаем объект Person для добавления в БД
         user = Person(**person)
-        # Добавляем в БД
+
         db.add(user)
-        # Коммитим
         db.commit()
 
 
