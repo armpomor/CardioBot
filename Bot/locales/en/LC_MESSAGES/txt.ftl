@@ -146,4 +146,5 @@ text_email = Hello! This is CardioBot. There is no need to respond to this lette
 # other-handler
 service_mode = The bot is in maintenance mode. Please wait.
 
-
+# MiddlewareBanned
+you_banned = You are banned from the bot!

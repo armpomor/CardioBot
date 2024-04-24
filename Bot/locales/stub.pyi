@@ -288,6 +288,9 @@ class TranslatorRunner:
     @staticmethod
     def service_mode() -> Literal["""Бот в режиме обслуживания. Пожалуйста, подождите."""]: ...
 
+    @staticmethod
+    def you_banned() -> Literal["""Вас забанили в боте!"""]: ...
+
 
 class Entry:
     @staticmethod

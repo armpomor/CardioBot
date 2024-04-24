@@ -146,4 +146,5 @@ text_email = Cześć! To jest CardioBot. Nie ma potrzeby odpowiadać na ten list
 # other-handler
 service_mode = Bot jest w trybie konserwacji. Proszę czekać.
 
-
+# MiddlewareBanned
+you_banned = Masz zablokowany dostęp do bota!
